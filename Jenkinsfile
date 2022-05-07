@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('prebuild') {
+    stage('stage1') {
       steps {
-        echo 'inside the prebuild'
+        sh 'echo "This is build $BUILD_NUMBER of demo $DEMO"'
       }
     }
 
